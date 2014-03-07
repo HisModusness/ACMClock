@@ -36,4 +36,13 @@
     [[self timeLabel] setText:[timeFormatter stringFromDate:[NSDate date]]];
 }
 
+- (IBAction)changeColor:(id)sender {
+    float red, green, blue;
+    red = (rand() % 8)/10.0;
+    green = (rand() % 8)/10.0;
+    blue = (rand() % 8)/10.0;
+    
+    [[self timeLabel] setTextColor:[UIColor colorWithRed:red green:green blue:blue alpha:1.0]];
+}
+
 @end

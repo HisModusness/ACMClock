@@ -12,6 +12,7 @@
     NSTimer *timer;
 }
 -(void)updateTime:(NSTimer *)timer;
+- (IBAction)changeColor:(id)sender;
 
 @property (strong, nonatomic) IBOutlet UILabel *timeLabel;
 @end
