@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ACMViewController : UIViewController
+@interface ACMViewController : UIViewController {
+    NSTimer *timer;
+}
+-(void)updateTime:(NSTimer *)timer;
 
+@property (strong, nonatomic) IBOutlet UILabel *timeLabel;
 @end

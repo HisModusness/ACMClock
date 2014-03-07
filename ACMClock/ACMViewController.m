@@ -17,6 +17,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self updateTime:nil];
+    timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(updateTime:) userInfo:nil repeats:YES];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -24,6 +26,14 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)updateTime:(NSTimer *)timer {
+    NSDateFormatter *timeFormatter = [[NSDateFormatter alloc] init];
+    [timeFormatter setTimeStyle:NSDateFormatterShortStyle];
+    [timeFormatter setDateStyle:NSDateFormatterNoStyle];
+    
+    [[self timeLabel] setText:[timeFormatter stringFromDate:[NSDate date]]];
 }
 
 @end
