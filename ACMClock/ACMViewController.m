@@ -30,7 +30,9 @@
 
 - (void)updateTime:(NSTimer *)timer {
     NSDateFormatter *timeFormatter = [[NSDateFormatter alloc] init];
-    [timeFormatter setTimeStyle:NSDateFormatterShortStyle];
+    [timeFormatter setTimeStyle:NSDateFormatterMediumStyle];
+    [timeFormatter setAMSymbol:@"am"];
+    [timeFormatter setPMSymbol:@"pm"];
     [timeFormatter setDateStyle:NSDateFormatterNoStyle];
     
     [[self timeLabel] setText:[timeFormatter stringFromDate:[NSDate date]]];
