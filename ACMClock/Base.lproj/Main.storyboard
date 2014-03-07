@@ -23,11 +23,20 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TG1-0A-i5d">
+                                <rect key="frame" x="113" y="518" width="95" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Change Color">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="ZfH-wg-ytD" secondAttribute="centerX" id="1x8-8Y-nBx"/>
+                            <constraint firstAttribute="centerX" secondItem="TG1-0A-i5d" secondAttribute="centerX" id="IOj-T2-Zxo"/>
                             <constraint firstAttribute="centerY" secondItem="ZfH-wg-ytD" secondAttribute="centerY" id="TD0-Aw-AyJ"/>
+                            <constraint firstItem="mKs-vH-2X1" firstAttribute="top" secondItem="TG1-0A-i5d" secondAttribute="bottom" constant="20" id="fOi-dj-2lF"/>
                         </constraints>
                     </view>
                     <connections>
